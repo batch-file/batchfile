@@ -31,4 +31,4 @@ steps:
     targetType: 'inline'
     script: |
       Get-Module -ListAvailable
-      #Invoke-Pester
+      Invoke-Pester
