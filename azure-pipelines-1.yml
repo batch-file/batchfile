@@ -32,7 +32,7 @@ steps:
     script: |
       Get-Module -ListAvailable
 
-- pwsh:  Invoke-Pester
+- pwsh:  Invoke-Pester -Show All
   workingDirectory:  #
   displayName:  #
   failOnStderr:  #
