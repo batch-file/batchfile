@@ -38,4 +38,3 @@ steps:
   failOnStderr:  #
   errorActionPreference:  #
   ignoreLASTEXITCODE:  #
-  env:  # mapping of environment variables to add
