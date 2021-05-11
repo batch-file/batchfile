@@ -6,6 +6,9 @@
 trigger:
 - main
 
+pool:
+  name: Self1
+
 steps:
 - script: Write-Host "Hello World"
   displayName: 'Run a one-line script'
