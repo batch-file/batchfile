@@ -1,4 +1,4 @@
-function Add-TwoNumbersn {
+function Add-TwoNumbers {
 	<#
 	.SYNOPSIS
 	Adds two numbers together
