@@ -6,7 +6,6 @@
 trigger:
 - main
 
-
 steps:
 - script: Write-Host "Hello World"
   displayName: 'Run a one-line script'
