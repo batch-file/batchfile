@@ -26,9 +26,16 @@ steps:
       
       Write-Host "Hello World"
 
-- task: PowerShell@2
+- task: pwsh
   inputs:
     targetType: 'inline'
     script: |
       Get-Module -ListAvailable
-      Invoke-Pester
+
+- pwsh:  Invoke-Pester
+  workingDirectory:  #
+  displayName:  #
+  failOnStderr:  #
+  errorActionPreference:  #
+  ignoreLASTEXITCODE:  #
+  env:  # mapping of environment variables to add
