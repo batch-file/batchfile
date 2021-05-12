@@ -29,6 +29,7 @@ steps:
   ignoreLASTEXITCODE:  #
 
 - pwsh: | 
+    gci ./docs/
     import-module ./src/batchfile.psd1
     New-MarkdownHelp -Module batchfile -OutputFolder ./docs
     gci ./docs/
