@@ -29,9 +29,11 @@ steps:
   ignoreLASTEXITCODE:  #
 
 - pwsh: | 
+    "showing current docs"
     gci ./docs/
     import-module ./src/batchfile.psd1
     New-MarkdownHelp -Module batchfile -OutputFolder ./docs
+    "showing docs"
     gci ./docs/
   workingDirectory:  #
   displayName:  #
