@@ -20,7 +20,18 @@ steps:
     targetType: 'inline'
     script: |
       Get-Module -ListAvailable
+
 - pwsh:  Invoke-Pester -Show All
+  workingDirectory:  #
+  displayName:  #
+  failOnStderr:  #
+  errorActionPreference:  #
+  ignoreLASTEXITCODE:  #
+
+- pwsh: | 
+    import-module ./src/batchfile.psd1
+    New-MarkdownHelp -Module batchfile -OutputFolder ./docs
+    gci ./docs/
   workingDirectory:  #
   displayName:  #
   failOnStderr:  #
