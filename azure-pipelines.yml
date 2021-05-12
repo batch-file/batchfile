@@ -1,0 +1,28 @@
+# Starter pipeline
+
+trigger:
+- main
+
+pool:
+ name: Self1
+
+steps:
+
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      Write-Host "Hello World"
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      Get-Module -ListAvailable
+- pwsh:  Invoke-Pester -Show All
+  workingDirectory:  #
+  displayName:  #
+  failOnStderr:  #
+  errorActionPreference:  #
+  ignoreLASTEXITCODE:  #
